@@ -28,7 +28,7 @@ body {
 }
 
 a {
-	color: #008dd2;
+	color: #1695a3;
 	text-decoration: none;
 }
 
@@ -47,23 +47,23 @@ strong {
 
 h1 {
 	font-size: 2.5rem;
-	font-weight: 700;
+	font-weight: 300;
 	line-height: 3rem;
 	margin: 1.5rem 0;
 }
 
 h2 {
 	font-size: 2rem;
-	font-weight: 700;
+	font-weight: 300;
 	line-height: 3rem;
 	margin: 1.5rem 0;
 }
 
 h3 {
-	font-size: 1.7rem;
-	font-weight: 500;
+	font-size: 1.5rem;
+	font-weight: 300;
 	line-height: 3rem;
-	margin: 1.5rem 0;
+	margin: 1.75rem 0;
 }
 
 h4 {
@@ -259,7 +259,7 @@ body {
 /* ## Navigation */
 
 .os-nav {
-	background: #323232;
+	background: #1695a3;
 	color: #fafafa;
 	overflow: none;
 	overflow-y: scroll;
@@ -272,17 +272,21 @@ body {
 @media (min-width: 62rem) {
 	.os-nav {
 		height: 100%;
-		padding: 1rem;
+		padding: 1.75rem 1rem;
 		position: fixed;
 		width: 16rem;
 	}
 }
 
+	.os-nav a {
+		color: white;
+	}
+
 .os-menu {
-	background: #323232;
-	border: 1px solid #008dd2;
+	background: #1695a3;
+	border: 1px solid white;
 	border-radius: 1.125rem;
-	color: #008dd2;
+	color: white;
 	font-size: .75rem;
 	height: 2.25rem;	
 	line-height: 1.5rem;
@@ -361,6 +365,16 @@ body {
 		margin-top: 0;
 	}
 
+		.os-profile-lastname {
+			display: none;
+		}
+
+		@media (min-width: 20rem) {
+			.os-profile-lastname {
+				display: inline;
+			}
+		}
+
 	.os-profile__contact {
 		float: right;
 		margin-bottom: 0;
@@ -393,7 +407,7 @@ body {
 		}
 
 			.os-contact__icon {
-				border: 1px solid #008dd2;
+				border: 1px solid #1695a3;
 				border-radius: 50%;
 				padding: .25rem;
 				transition: background-color .25s ease-in;
@@ -416,6 +430,10 @@ body {
 					}
 				}
 
+			.os-contact__icon--white {
+				border-color: white;
+			}
+
 			.os-contact__text {
 				position: relative;
 				top: -12px;
@@ -428,12 +446,13 @@ body {
 	background: #f9f9f9;
 	margin: 0 auto;
 	max-width: 768px;
-	padding: 1.5rem;
+	padding: .5rem;
 }
 
 @media (min-width: 62rem) {
 	.os-main {
 		margin-left: 16rem;
+		padding: 1.5rem;
 	}
 }
 
